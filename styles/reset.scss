@@ -1,0 +1,57 @@
+/* reset.scss */
+
+/* همه margin و padding های پیش‌فرض رو حذف می‌کنیم */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* بدنه صفحه */
+html, body {
+  height: 100%;
+  font-size: 16px; // سایز پایه
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #000;
+}
+
+/* لینک‌ها */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* لیست‌ها */
+ul, ol {
+  list-style: none;
+}
+
+/* تصاویر و ویدئوها */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* فرم‌ها */
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* دکمه‌ها */
+button {
+  cursor: pointer;
+}
+
+/* جدول‌ها */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

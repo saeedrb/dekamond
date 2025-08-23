@@ -1,0 +1,9 @@
+body {
+    font-family: $font-family;
+    background-color: $light-gray;
+}
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

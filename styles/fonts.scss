@@ -1,0 +1,23 @@
+// fonts.scss
+@mixin font-face($family, $fileName, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    src: url("../public/woff2/#{$fileName}.woff2") format("woff2"),
+      url("../public/woff/#{$fileName}.woff") format("woff");
+  }
+}
+@include font-face("dana", "Dana-Hairline", 10);
+@include font-face("dana", "Dana-Thin", 100);
+@include font-face("dana", "Dana-UltraLight", 200);
+@include font-face("dana", "Dana-Light", 300);
+@include font-face("dana", "Dana-Medium", 500);
+@include font-face("dana", "Dana-DemiBold", 600);
+@include font-face("dana", "Dana-ExtraBold", 800);
+@include font-face("dana", "Dana-Black", 900);
+@include font-face("dana", "Dana-ExtraBlack", 930);
+@include font-face("dana", "Dana-Heavy", 960);
+@include font-face("dana", "Dana-fat", 990);
+@include font-face("dana", "Dana-Bold", bold);
+@include font-face("dana", "Dana-Regular", normal);
