@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.welcomeMessage {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
