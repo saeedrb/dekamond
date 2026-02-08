@@ -4,8 +4,8 @@
     font-family: $family;
     font-style: $style;
     font-weight: $weight;
-    src: url("../public/woff2/#{$fileName}.woff2") format("woff2"),
-      url("../public/woff/#{$fileName}.woff") format("woff");
+    src: url("/fonts/woff2/#{$fileName}.woff2") format("woff2"),
+      url("/fonts/woff/#{$fileName}.woff") format("woff");
   }
 }
 @include font-face("dana", "Dana-Hairline", 10);

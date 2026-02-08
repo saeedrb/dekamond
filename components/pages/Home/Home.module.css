@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.search {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 150px;
+}
+.search > div {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--white);
+    min-height: 56px;
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid var(--border-color-1);
+    padding: 0 10px;
+    align-items: center;
+}
+
+.search > div > input {
+    width: 100%;
+    font-family: var(--font-family);
+}
+.dataList {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin-top: 100px;
+}
+.dataList > div:last-child > div {
+    border-bottom: unset;
+}
+.dataList > div > div:last-child {
+    border-left: unset;
+}
+.dataHeader {
+    display: flex;
+    width: 100%;
+    font-weight: 800;
+    font-size: 18px;
+}
+.dataHeader > div, .dataRow > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 5px;
+    border-bottom: 1px solid var(--border-color-1);
+    border-left: 1px solid var(--border-color-1);
+    background-color: var(--bg-color-2);
+}
+.dataHeader > div:first-child {
+    width: 5%;
+}
+.dataHeader > div:nth-child(2) {
+    width: 50%;
+}
+.dataHeader > div:nth-child(3) {
+    width: 25%;
+}
+.dataHeader > div:last-child {
+    width: 20%;
+}
+
+.dataRow {
+    display: flex;
+    width: 100%;
+}
+.dataRow > div {
+    display: flex;
+}
+.dataRow > div:first-child {
+    width: 5%;
+}
+.dataRow > div:nth-child(2) {
+    width: 50%;
+}
+.dataRow > div:nth-child(3) {
+    width: 25%;
+}
+.dataRow > div:last-child {
+    width: 20%;
+}

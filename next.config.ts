@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  assetPrefix: "./",
+  images: {
+    unoptimized: true,
+  },
+  trailingSlash: true, // گاهی برای static بهتره
 };
 
 export default nextConfig;
