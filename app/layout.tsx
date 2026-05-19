@@ -1,27 +1,36 @@
-import "../styles/reset.scss";
-import "../styles/fonts.scss";
-import "../styles/variables.scss";
-import "../styles/public.scss";
-import Script from "next/script";
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import "../styles/globals.scss";
+
+export const metadata: Metadata = {
+  title: "Montisoro | Absence Management & Re-integratie 3.0",
+  description:
+    "B2B website for Montisoro: verzuimbeheer, sustainable reintegration, KB Re-integratie 3.0 support and absence cost insight for Belgian employers.",
+  keywords: [
+    "Montisoro",
+    "verzuimbeheer",
+    "re-integratie",
+    "KB Re-integratie 3.0",
+    "absence management Belgium",
+    "werkbaar werk",
+  ],
+  openGraph: {
+    title: "Montisoro | Verzuimbeheer & Re-integratie",
+    description:
+      "Professional support for Belgian employers managing absence, reintegration and KB Re-integratie 3.0 obligations.",
+    type: "website",
+    locale: "nl_BE",
+  },
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <script>
-            {`!function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/hVjMmewI/native-khoshnevis.vercel.app-43864/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");`}
-        </script>
-        <title>نرخ خدمات کافی نت شهرستان ساری</title>
-      </head>
-      <body>
-        <div className="container">
-          <div className="wrapper">{children}</div>
-        </div>
-      </body>
+    <html lang="nl-BE">
+      <body>{children}</body>
     </html>
   );
 }
